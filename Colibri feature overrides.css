@@ -1,0 +1,42 @@
+/* Override for photo gallery to crop images square
+Add class in builder called gallery-page-crop-photo */
+.gallery-page-crop-photo img{
+	width: auto;
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+
+/* Accessibility widget move to bottom*/
+#pojo-a11y-toolbar.pojo-a11y-toolbar-left .pojo-a11y-toolbar-toggle {
+	bottom: 0;
+	left:0;
+	position: fixed;
+}
+
+
+#pojo-a11y-toolbar.pojo-a11y-toolbar-left.pojo-a11y-toolbar-open {
+	bottom: 50px !important;
+	left:0;
+}
+
+#pojo-a11y-toolbar.pojo-a11y-toolbar-left {
+	bottom: 50px !important;
+}
+
+#pojo-a11y-toolbar {
+	top: auto !important; 
+}
+
+
+/* Hide ReCaptcha Badge */
+/* Shortcoder:
+This site is protected by reCAPTCHA and the Google
+<a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply. 
+*/
+
+/* CSS: */
+.grecaptcha-badge {
+opacity: 0!important;
+}
